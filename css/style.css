@@ -1,12 +1,14 @@
 body {
-    background-color: #CFC096;
-    color: #00274C;
+    background-color: #F7F9FB;
+    color: #000000;
     font-family: Arial, Helvetica, sans-serif;
   }
 
 footer {
   width: 100%;
   padding: 20px;
+  background-color: #00274C;
+  color: #ffffff;
 }
 
 
@@ -19,19 +21,21 @@ h1 {
 
 h2 {
   font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #702082;
   padding: 20px; 
+  background-color: #FFCB05;
 }
 
 h3 {
   margin-top: 16px;
   font-size: 16px;
+}
+
+h2, h3 {
+
   font-family: Arial, Helvetica, sans-serif;
-  color: #9A3324;
+  color: #00274C;
   font-weight: bold;
-  
+
 }
 p {
   font-size: 16px;
@@ -46,10 +50,15 @@ section li {
 
 }
 
-image {
-  border:#00274C;
+img {
+  /* border:#00274C 2px solid; */
+  margin-top: 10px;
 }
 
+figcaption {
+  font-size: 12px;
+  text-align:center; 
+}
 
 
 /* ------------------------------- */
@@ -67,7 +76,7 @@ a:hover, a:focus{
 .skip a{
   position: absolute; 
   top: -40px;
-  color: white;
+  color: black;
 }
 
 
@@ -76,6 +85,7 @@ a:hover, a:focus{
 .skip a:focus {
   position: absolute; 
   top: 20px;
+  color: white;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -118,11 +128,6 @@ section h2{
   text-align: center;
 }
 
-section figure {
-  width: 50%;
-  margin-left: 25%;
-}
-
 
 
 
@@ -138,6 +143,27 @@ section figure {
   align-items: center;
   justify-items: center;
   
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  padding: 20px;
+  gap: 15px;
+  font-size: 12px;
+  line-height: 180%;
+  justify-items: center;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.header-logo {
+  padding: 12%;
+}
+
+.footer-title{
+  font-weight: bold;
+  color:#FFCB05;
 }
 
 .container {
