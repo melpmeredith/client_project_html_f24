@@ -13,7 +13,7 @@
     </div>
     <header class="header-container">
         
-        <nav>
+        <nav class="topBotomBordersIn">
             <ul>
                 <li class="active"><a href = "index.html">Home</a></li>
                 <li><a href = "studyspaces.html">Study Spaces on Campus</a></li>
@@ -115,6 +115,14 @@
             </ul>
         </article>
 
+        <article>
+            <!-- gotten from https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ -->
+            <p>Year: <span id="year"></span></p>
+        </article>
+
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
